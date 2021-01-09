@@ -14,74 +14,77 @@
 
 <body>
     <header>
-
+        Create a MadLib!
     </header>
 
     <main>
-        <iframe title="mad-lib"></iframe>
-        <form class="input" target="mad-lib">
-            <label for="noun-1">Noun:</label><br>
-            <input type="text" id="noun-1" name="noun-1" placeholder="Person, Place, or Thing"><br>
+        <section class="input">
+            <content>
+                <label for="noun-1">Noun 1:</label><br>
+                <input type="text" id="noun-1" name="noun-1" placeholder="Person, Place, or Thing"><br>
 
-            <label for="verb-2">Verb:</label><br>
-            <input type="text" id="verb-2" name="verb-2" placeholder="An Action"><br>
+                <label for="adjective-3">Adjective 3:</label><br>
+                <input type="text" id="adjective-3" name="adjective-3" placeholder="Descriptor"><br>
 
-            <label for="adjective-3">Adjective:</label><br>
-            <input type="text" id="adjective-3" name="adjective-3" placeholder="Descriptor"><br>
+                <!--past tense verb-->
+                <label for="verb-5">Verb 5:</label><br>
+                <input type="text" id="verb-5" name="verb-5" placeholder="An Action (past tense)"><br>
 
-            <label for="noun-4">Noun:</label><br>
-            <input type="text" id="noun-4" name="noun-4" placeholder="Person, Place, or Thing"><br>
+                <label for="verb-7">Verb 7:</label><br>
+                <input type="text" id="verb-7" name="verb-7" placeholder="An Action ending 'ing'"><br>
 
-            <!--past tense verb-->
-            <label for="verb-5">Verb:</label><br>
-            <input type="text" id="verb-5" name="verb-5" placeholder="An Action (past tense)"><br>
+                <label for="noun-9">Noun 9:</label><br>
+                <input type="text" id="noun-9" name="noun-9" placeholder="Person, Place, or Thing"><br>
 
-            <label for="adjective-6">Adjective:</label><br>
-            <input type="text" id="adjective-6" name="adjective-6" placeholder="Descriptor"><br>
+                <label for="verb-11">Verb 11:</label><br>
+                <input type="text" id="verb-11" name="verb-11" placeholder="An Action"><br>
 
-            <label for="verb-7">Verb:</label><br>
-            <input type="text" id="verb-7" name="verb-7" placeholder="An Action"><br>
+            </content>
+            <content>
+                <label for="verb-2">Verb 2:</label><br>
+                <input type="text" id="verb-2" name="verb-2" placeholder="An Action"><br>
 
-            <label for="adjective-8">Adjective:</label><br>
-            <input type="text" id="adjective-8" name="adjective-8" placeholder="Descriptor"><br>
+                <label for="noun-4">Noun 4:</label><br>
+                <input type="text" id="noun-4" name="noun-4" placeholder="Person, Place, or Thing"><br>
 
-            <label for="noun-9">Noun:</label><br>
-            <input type="text" id="noun-9" name="noun-9" placeholder="Person, Place, or Thing"><br>
+                <label for="adjective-6">Adjective 6:</label><br>
+                <input type="text" id="adjective-6" name="adjective-6" placeholder="Descriptor"><br>
 
-            <label for="noun-10">Noun</label>
-            <input type="text" id="noun-10" name="noun-10" placeholder="Person, Place, or Thing"><br>
+                <label for="adjective-8">Adjective 8:</label><br>
+                <input type="text" id="adjective-8" name="adjective-8" placeholder="Descriptor"><br>
 
-            <label for="verb-11">Verb:</label><br>
-            <input type="text" id="verb-11" name="verb-11" placeholder="An Action"><br>
+                <label for="verb-10">Verb 10:</label><br>
+                <input type="text" id="verb-10" name="verb-10" placeholder="An Action"><br>
 
-            <label for="verb-12">Verb:</label><br>
-            <input type="text" id="verb-12" name="verb-12" placeholder="An Action"><br>
-
-            <button id="submit-button">Create my Awesome Madlib!</button>
-
-        </form>
+                <label for="noun-12">Noun 12:</label><br>
+                <input type="text" id="noun-12" name="noun-12" placeholder="Person, Place, or Thing"><br>
+            </content>
+        </section>
+        <button id="submit-button">
+            Create my Awesome Madlib!
+        </button>
         <section class="output">
             <p>
-                The <span id="user-noun-1"></span> went to the store to <span id="user-verb-2"></span>
+                The <span class="span" id="user-noun-1"></span> went to the market to <span id="user-verb-2"></span>.
+                <br>
 
-                when he arrived he saw a <span id="user-adj-3"></span><span id="user-noun-4"></span>. <br>
+                When they arrived, they saw a <span class="span" id="user-adj-3"></span><span id="user-noun-4"></span>,
+                <br>
 
-                Then he <span id="user-verb-5"></span> out the door. <br>
+                so they <span class="span" id="user-verb-5"></span> out the door. <br>
 
-                Given the <span id="user-adj-6"></span> weather outside <br>
+                Given the <span class="span" id="user-adj-6"></span> weather outside <br>
 
-                they took their time <span id="user-verb-7"></span>ing before returning to the store. <br>
+                they took their time <span class="span" id="user-verb-7"></span> before returning to the store. <br>
 
-                Suddenly the <span id="user-adj-8"></span> Strega Nona appeared with a wooden <span
-                    id="user-noun-9a"></span>. <br>
+                Suddenly the <span class="span" id="user-adj-8"></span> Strega Nona appeared with a wooden <span
+                    id="user-noun-9"></span>. <br>
 
-                Within the <span id="user-noun-9b"></span> was a message that read <br>
+                Within the <span class="span" id="user-noun-9a"></span> was a message that read <br>
 
-                "<span id="user-noun-10"></span> now or forever <span id="user-verb-11"></span> your <span
-                    id="user-verb-12"></span>." <br>
-
-
-                </span>
+                "<span class="span" id="user-verb-10"></span> now or forever <span class="span"
+                    id="user-verb-11"></span> your <span id="user-noun-12"></span>." <br>
+            </p>
 
         </section>
     </main>
