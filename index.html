@@ -9,90 +9,85 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
-    <title>Document</title>
+    <title>Beware: Strega Nona</title>
 </head>
 
 <body>
-    <div>
-        <section class="input">
-            <div>
-                <input type="text" id="noun-1">
-                <span>Noun</span>
-            </div>
-            <div>
-                <input type="text" id="verb-2">
-                <span>Verb</span>
-            </div>
-            <div>
-                <input type="text" id="adjective-3">
-                <span>Adjective</span>
-            </div>
-            <div>
-                <input type="text" id="noun-4">
-                <span>Noun</span>
-            </div>
-            <div>
-                <!--past tense verb-->
-                <input type="text" id="verb-5">
-                <span>Past-Tense Verb</span>
-            </div>
-            <div>
-                <input type="text" id="adjective-6">
-                <span>Adjective</span>
-            </div>
-            <div>
-                <input type="text" id="verb-7">
-                <span>Verb</span>
-            </div>
-            <div>
-                <input type="text" id="adjective-8">
-                <span>Adjective</span>
-            </div>
-            <div>
-                <input type="text" id="noun-9">
-                <span>Noun</span>
-            </div>
-            <div>
-                <input type="text" id="verb-10">
-                <span>Verb</span>
-            </div>
-            <div>
-                <input type="text" id="verb-11">
-                <span>Verb</span>
-            </div>
-            <div>
-                <input type="text" id="noun-12">
-                <span>Noun</span>
-            </div>
+    <header>
+
+    </header>
+
+    <main>
+        <iframe title="mad-lib"></iframe>
+        <form class="input" target="mad-lib">
+            <label for="noun-1">Noun:</label><br>
+            <input type="text" id="noun-1" name="noun-1" placeholder="Person, Place, or Thing"><br>
+
+            <label for="verb-2">Verb:</label><br>
+            <input type="text" id="verb-2" name="verb-2" placeholder="An Action"><br>
+
+            <label for="adjective-3">Adjective:</label><br>
+            <input type="text" id="adjective-3" name="adjective-3" placeholder="Descriptor"><br>
+
+            <label for="noun-4">Noun:</label><br>
+            <input type="text" id="noun-4" name="noun-4" placeholder="Person, Place, or Thing"><br>
+
+            <!--past tense verb-->
+            <label for="verb-5">Verb:</label><br>
+            <input type="text" id="verb-5" name="verb-5" placeholder="An Action (past tense)"><br>
+
+            <label for="adjective-6">Adjective:</label><br>
+            <input type="text" id="adjective-6" name="adjective-6" placeholder="Descriptor"><br>
+
+            <label for="verb-7">Verb:</label><br>
+            <input type="text" id="verb-7" name="verb-7" placeholder="An Action"><br>
+
+            <label for="adjective-8">Adjective:</label><br>
+            <input type="text" id="adjective-8" name="adjective-8" placeholder="Descriptor"><br>
+
+            <label for="noun-9">Noun:</label><br>
+            <input type="text" id="noun-9" name="noun-9" placeholder="Person, Place, or Thing"><br>
+
+            <label for="noun-10">Noun</label>
+            <input type="text" id="noun-10" name="noun-10" placeholder="Person, Place, or Thing"><br>
+
+            <label for="verb-11">Verb:</label><br>
+            <input type="text" id="verb-11" name="verb-11" placeholder="An Action"><br>
+
+            <label for="verb-12">Verb:</label><br>
+            <input type="text" id="verb-12" name="verb-12" placeholder="An Action"><br>
+
             <button id="submit-button">Create my Awesome Madlib!</button>
 
-        </section>
+        </form>
         <section class="output">
             <p>
-                The __1__ went to the store to __2_ <br>
+                The <span id="user-noun-1"></span> went to the store to <span id="user-verb-2"></span>
 
-                when he arrived he saw a _3-4__. <br>
+                when he arrived he saw a <span id="user-adj-3"></span><span id="user-noun-4"></span>. <br>
 
-                Then he __5___ out the door. <br>
+                Then he <span id="user-verb-5"></span> out the door. <br>
 
-                Given the _6__ weather outside <br>
+                Given the <span id="user-adj-6"></span> weather outside <br>
 
-                they took their time _7__ing before returning to the store. <br>
+                they took their time <span id="user-verb-7"></span>ing before returning to the store. <br>
 
-                Suddenly the __8_ Strega Nona <br>
+                Suddenly the <span id="user-adj-8"></span> Strega Nona appeared with a wooden <span
+                    id="user-noun-9a"></span>. <br>
 
-                appeared with a wooden __9*_. <br>
+                Within the <span id="user-noun-9b"></span> was a message that read <br>
 
-                Within the _9*__ was a message that read <br>
+                "<span id="user-noun-10"></span> now or forever <span id="user-verb-11"></span> your <span
+                    id="user-verb-12"></span>." <br>
 
-                "__10__ now or forever _11___ your _12__." <br>
 
-
-            </p>
+                </span>
 
         </section>
-    </div>
+    </main>
+    <footer>
 
+    </footer>
 
     <script type="module" src="app.js"></script>
 </body>

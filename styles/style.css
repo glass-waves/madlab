@@ -45,6 +45,10 @@ section {
     border: solid 2px var(--color1);
 }
 
+form {
+    border: 1px solid black;
+}
+
 header {
     display: flex;
     justify-content: flex-end;
