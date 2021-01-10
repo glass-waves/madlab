@@ -9,90 +9,88 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
-    <title>Document</title>
+    <title>Beware: Strega Nona</title>
 </head>
 
 <body>
-    <div>
-        <section class="input">
-            <div>
-                <input type="text" id="noun-1">
-                <span>Noun</span>
-            </div>
-            <div>
-                <input type="text" id="verb-2">
-                <span>Verb</span>
-            </div>
-            <div>
-                <input type="text" id="adjective-3">
-                <span>Adjective</span>
-            </div>
-            <div>
-                <input type="text" id="noun-4">
-                <span>Noun</span>
-            </div>
-            <div>
-                <!--past tense verb-->
-                <input type="text" id="verb-5">
-                <span>Past-Tense Verb</span>
-            </div>
-            <div>
-                <input type="text" id="adjective-6">
-                <span>Adjective</span>
-            </div>
-            <div>
-                <input type="text" id="verb-7">
-                <span>Verb</span>
-            </div>
-            <div>
-                <input type="text" id="adjective-8">
-                <span>Adjective</span>
-            </div>
-            <div>
-                <input type="text" id="noun-9">
-                <span>Noun</span>
-            </div>
-            <div>
-                <input type="text" id="verb-10">
-                <span>Verb</span>
-            </div>
-            <div>
-                <input type="text" id="verb-11">
-                <span>Verb</span>
-            </div>
-            <div>
-                <input type="text" id="noun-12">
-                <span>Noun</span>
-            </div>
-            <button id="submit-button">Create my Awesome Madlib!</button>
+    <header>
+        Create a MadLib!
+    </header>
 
+    <main>
+        <section class="input">
+            <content>
+                <label for="noun-1">Noun 1:</label><br>
+                <input type="text" id="noun-1" name="noun-1" placeholder="Person, Place, or Thing"><br>
+
+                <label for="adjective-3">Adjective 3:</label><br>
+                <input type="text" id="adjective-3" name="adjective-3" placeholder="Descriptor"><br>
+
+                <!--past tense verb-->
+                <label for="verb-5">Verb 5:</label><br>
+                <input type="text" id="verb-5" name="verb-5" placeholder="An Action (past tense)"><br>
+
+                <label for="verb-7">Verb 7:</label><br>
+                <input type="text" id="verb-7" name="verb-7" placeholder="An Action ending 'ing'"><br>
+
+                <label for="noun-9">Noun 9:</label><br>
+                <input type="text" id="noun-9" name="noun-9" placeholder="Person, Place, or Thing"><br>
+
+                <label for="verb-11">Verb 11:</label><br>
+                <input type="text" id="verb-11" name="verb-11" placeholder="An Action"><br>
+
+            </content>
+            <content>
+                <label for="verb-2">Verb 2:</label><br>
+                <input type="text" id="verb-2" name="verb-2" placeholder="An Action"><br>
+
+                <label for="noun-4">Noun 4:</label><br>
+                <input type="text" id="noun-4" name="noun-4" placeholder="Person, Place, or Thing"><br>
+
+                <label for="adjective-6">Adjective 6:</label><br>
+                <input type="text" id="adjective-6" name="adjective-6" placeholder="Descriptor"><br>
+
+                <label for="adjective-8">Adjective 8:</label><br>
+                <input type="text" id="adjective-8" name="adjective-8" placeholder="Descriptor"><br>
+
+                <label for="verb-10">Verb 10:</label><br>
+                <input type="text" id="verb-10" name="verb-10" placeholder="An Action"><br>
+
+                <label for="noun-12">Noun 12:</label><br>
+                <input type="text" id="noun-12" name="noun-12" placeholder="Person, Place, or Thing"><br>
+            </content>
         </section>
+        <button id="submit-button">
+            Create my Awesome Madlib!
+        </button>
         <section class="output">
             <p>
-                The __1__ went to the store to __2_ <br>
+                The <span class="span" id="user-noun-1"></span> went to the market to <span id="user-verb-2"></span>.
+                <br>
 
-                when he arrived he saw a _3-4__. <br>
+                When they arrived, they saw a <span class="span" id="user-adj-3"></span><span id="user-noun-4"></span>,
+                <br>
 
-                Then he __5___ out the door. <br>
+                so they <span class="span" id="user-verb-5"></span> out the door. <br>
 
-                Given the _6__ weather outside <br>
+                Given the <span class="span" id="user-adj-6"></span> weather outside <br>
 
-                they took their time _7__ing before returning to the store. <br>
+                they took their time <span class="span" id="user-verb-7"></span> before returning to the store. <br>
 
-                Suddenly the __8_ Strega Nona <br>
+                Suddenly the <span class="span" id="user-adj-8"></span> Strega Nona appeared with a wooden <span
+                    id="user-noun-9"></span>. <br>
 
-                appeared with a wooden __9*_. <br>
+                Within the <span class="span" id="user-noun-9a"></span> was a message that read <br>
 
-                Within the _9*__ was a message that read <br>
-
-                "__10__ now or forever _11___ your _12__." <br>
-
-
+                "<span class="span" id="user-verb-10"></span> now or forever <span class="span"
+                    id="user-verb-11"></span> your <span id="user-noun-12"></span>." <br>
             </p>
 
         </section>
-    </div>
-
+    </main>
+    <footer>
+        <!-- this is a test -->
+    </footer>
 
     <script type="module" src="app.js"></script>
 </body>
