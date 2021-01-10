@@ -9,61 +9,65 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
-    <title>Beware: Strega Nona</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Imbue:wght@600&display=swap" rel="stylesheet">
+    <title>Magic Madlib</title>
 </head>
 
 <body>
     <header>
-        Create a MadLib!
+        The Rabitt & The Tortelinni:<br> a rough night out
     </header>
 
     <main>
-        <section class="input">
-            <content>
-                <label for="noun-1">Noun 1:</label><br>
-                <input type="text" id="noun-1" name="noun-1" placeholder="Person, Place, or Thing"><br>
+        <div id="input">
+            <section class="border-box">
+                <content>
+                    <label for="noun-1">Noun 1:</label><br>
+                    <input type="text" id="noun-1" name="noun-1" placeholder="Person, Place, or Thing"><br>
 
-                <label for="adjective-3">Adjective 3:</label><br>
-                <input type="text" id="adjective-3" name="adjective-3" placeholder="Descriptor"><br>
+                    <label for="adjective-3">Adjective 3:</label><br>
+                    <input type="text" id="adjective-3" name="adjective-3" placeholder="Descriptor"><br>
 
-                <!--past tense verb-->
-                <label for="verb-5">Verb 5:</label><br>
-                <input type="text" id="verb-5" name="verb-5" placeholder="An Action (past tense)"><br>
+                    <!--past tense verb-->
+                    <label for="verb-5">Verb 5:</label><br>
+                    <input type="text" id="verb-5" name="verb-5" placeholder="An Action (past tense)"><br>
 
-                <label for="verb-7">Verb 7:</label><br>
-                <input type="text" id="verb-7" name="verb-7" placeholder="An Action ending 'ing'"><br>
+                    <label for="verb-7">Verb 7:</label><br>
+                    <input type="text" id="verb-7" name="verb-7" placeholder="An Action ending 'ing'"><br>
 
-                <label for="noun-9">Noun 9:</label><br>
-                <input type="text" id="noun-9" name="noun-9" placeholder="Person, Place, or Thing"><br>
+                    <label for="noun-9">Noun 9:</label><br>
+                    <input type="text" id="noun-9" name="noun-9" placeholder="Person, Place, or Thing"><br>
 
-                <label for="verb-11">Verb 11:</label><br>
-                <input type="text" id="verb-11" name="verb-11" placeholder="An Action"><br>
+                    <label for="verb-11">Verb 11:</label><br>
+                    <input type="text" id="verb-11" name="verb-11" placeholder="An Action"><br>
 
-            </content>
-            <content>
-                <label for="verb-2">Verb 2:</label><br>
-                <input type="text" id="verb-2" name="verb-2" placeholder="An Action"><br>
+                </content>
+                <content>
+                    <label for="verb-2">Verb 2:</label><br>
+                    <input type="text" id="verb-2" name="verb-2" placeholder="An Action"><br>
 
-                <label for="noun-4">Noun 4:</label><br>
-                <input type="text" id="noun-4" name="noun-4" placeholder="Person, Place, or Thing"><br>
+                    <label for="noun-4">Noun 4:</label><br>
+                    <input type="text" id="noun-4" name="noun-4" placeholder="Person, Place, or Thing"><br>
 
-                <label for="adjective-6">Adjective 6:</label><br>
-                <input type="text" id="adjective-6" name="adjective-6" placeholder="Descriptor"><br>
+                    <label for="adjective-6">Adjective 6:</label><br>
+                    <input type="text" id="adjective-6" name="adjective-6" placeholder="Descriptor"><br>
 
-                <label for="adjective-8">Adjective 8:</label><br>
-                <input type="text" id="adjective-8" name="adjective-8" placeholder="Descriptor"><br>
+                    <label for="adjective-8">Adjective 8:</label><br>
+                    <input type="text" id="adjective-8" name="adjective-8" placeholder="Descriptor"><br>
 
-                <label for="verb-10">Verb 10:</label><br>
-                <input type="text" id="verb-10" name="verb-10" placeholder="An Action"><br>
+                    <label for="verb-10">Verb 10:</label><br>
+                    <input type="text" id="verb-10" name="verb-10" placeholder="An Action"><br>
 
-                <label for="noun-12">Noun 12:</label><br>
-                <input type="text" id="noun-12" name="noun-12" placeholder="Person, Place, or Thing"><br>
-            </content>
-        </section>
-        <button id="submit-button">
-            Create my Awesome Madlib!
-        </button>
-        <section class="output">
+                    <label for="noun-12">Noun 12:</label><br>
+                    <input type="text" id="noun-12" name="noun-12" placeholder="Person, Place, or Thing"><br>
+                </content>
+            </section>
+            <button id="submit-button">
+                Create my Awesome Madlib!
+            </button>
+        </div>
+        <section class="border-box" id="output">
             <p>
                 The <span class="span" id="user-noun-1"></span> went to the market to <span id="user-verb-2"></span>.
                 <br>

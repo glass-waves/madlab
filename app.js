@@ -1,5 +1,9 @@
 // import functions and grab DOM elements
 
+const inputBox = document.getElementById('input');
+const storyBox = document.getElementById('output');
+
+
 // -- User Input Fields --
 const inputNoun1 = document.getElementById('noun-1');
 const inputVerb2 = document.getElementById('verb-2');
@@ -50,7 +54,10 @@ createMadLib.addEventListener('click', () => {
     outputVerb10.textContent = inputVerb10.value;
     outputVerb11.textContent = inputVerb11.value;
     outputNoun12.textContent = inputNoun12.value;
-})
+
+    inputBox.style.display = 'none';
+    storyBox.style.display = 'block';
+});
 
 // this is a test
 
