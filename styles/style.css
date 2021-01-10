@@ -1,4 +1,8 @@
 
+body, html{
+    height: 100%;
+    width: 100%;
+}
 body {
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
     /* --color1: hsla(349, 69%, 76%, 1);
@@ -18,35 +22,75 @@ body {
     --gutter: 30px;
     --footer-height: 25px;
     
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    font-family: 'Imbue', serif;
 }
 
 main {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    background-image: url('../assets/strega_nona.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 section {
-    background-color: var(--color5);
-    width: 1000px;
+    padding: 40px;
+    margin: 40px;
     max-width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: solid 2px var(--color1);
+    background-color: rgba(255, 255, 255, .6);
+    border: solid 5px rgb(97, 71, 47);
+    border-radius: 12px;
+    font-size: 1.5rem;
+}
+
+#input{
+    position: relative;
+}
+
+input{
+    margin: 10px;
+}
+
+label{
+    margin: 10px;
+    color: rgb(74, 101, 55);
+}
+
+#output{
+    display: none;
+    color: rgb(74, 101, 55);
+}
+
+#submit-button{
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    background: rgb(235, 215, 215);
+    border-color: rgb(97, 71, 47);
+    font-family: 'Imbue', serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color:rgb(74, 101, 55);
 }
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color3);
-    height: var(--header-height);
+    color: #e47438;
+    background-color: rgb(235, 215, 215);
+    font-size: 2rem;
+    text-align: center;
+    height: 100px;
     box-shadow: var(--shadow);
 }
 
